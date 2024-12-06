@@ -17,11 +17,11 @@ SUBJECTS = [
   },
   {
     "name": "FIS",
-    "workload": 4,
+    "workload": 5,
   },
   {
     "name": "GEO",
-    "workload": 4,
+    "workload": 5,
   },
   {
     "name": "INF",
@@ -96,12 +96,12 @@ if __name__ == '__main__':
   schedule_1 = create_schedule(lectures, coloring_1)
   schedule_2 = create_schedule(lectures, coloring_2)
   
+  print('========== Solução com heurística ==========')
+  print_schedule(schedule_2)
+  print(f'\nTempo: {end_2 - start_2}')
+  
   print('========== Solução sem heurística ==========')
   print_schedule(schedule_1)
   print(f'\nTempo: {end_1 - start_1}')
   
   print("\n\n")
-  
-  print('========== Solução com heurística ==========')
-  print_schedule(schedule_2)
-  print(f'\nTempo: {end_2 - start_2}')
